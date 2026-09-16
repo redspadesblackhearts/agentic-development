@@ -7,6 +7,8 @@
 1. Features are horizontally sliced into modules, typically with a `:feature:` module
 2. Each feature module is vertically sliced into `:domain`, `:data` and `ui`.
 3. Use domain-centric terminology for packages, classes and methods.
+4. Put shared logic **across all modules** into modules with a `:shared` module, e.g. `:shared:design-system`, `:shared:test`
+5. Put common feature logic **across the feature modules** into the `:feature:common` module, sliced into `:domain`, `:data` and `ui`.
 
 ## Use cases
 
