@@ -17,10 +17,10 @@ When this phrase is used, the agent should create exactly three Gradle modules f
 ## Required steps
 
 1. Create the three module directories under `tracking/<featureName>/`.
-2. Add a `build.gradle.kts` for each module that applies `alias(libs.plugins.trxe.android.library)` (and other plugins only as needed), following existing library-module conventions in this repo.
+2. Add a `build.gradle.kts` for each module that applies `alias(libs.plugins.<appPackage>.android.library)` (and other plugins only as needed), following existing library-module conventions in this repo.
 3. In each of the three modules, create the package
-   `src/main/kotlin/de/redspadesblackhearts/trxe/<featureName>/`
-   (Kotlin package: `de.redspadesblackhearts.trxe.<featureName>`).
+   `src/main/kotlin/de/redspadesblackhearts/<appPackage>/<featureName>/`
+   (Kotlin package: `de.redspadesblackhearts.<appPackage>.<featureName>`).
 4. Register all three modules in `settings.gradle.kts` with:
     - `include(":tracking:<featureName>:ui")`
     - `include(":tracking:<featureName>:domain")`

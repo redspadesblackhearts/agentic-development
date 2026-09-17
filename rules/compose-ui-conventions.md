@@ -24,7 +24,7 @@
 
 1. Add `@Preview` for reusable composables and parent views.
 2. Previews **must** use sample UI states — do not invent one-off inline state in previews when a sample exists.
-3. Wrap previews in the app theme (`TrxeTheme`).
+3. Wrap previews in the app theme.
 4. Preview functions are private.
 
 ## Strings / labels

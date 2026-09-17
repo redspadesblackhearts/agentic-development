@@ -10,7 +10,7 @@ class AndroidUiConventionPlugin : Plugin<Project> {
     override fun apply(target: Project) {
         with(target) {
             with(pluginManager) {
-                apply("trxe.android.library")
+                apply("<appPackage>.android.library")
                 apply("org.jetbrains.kotlin.plugin.compose")
             }
 

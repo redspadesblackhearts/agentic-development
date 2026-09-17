@@ -17,7 +17,7 @@ When refactoring or removing features, always **clean up `libs.versions.toml`** 
 
 ## Build Logic
 
-1. Use **convention plugins** (e.g., `trxe.android.ui`) to share common build logic across modules. 
+1. Use **convention plugins** to share common build logic across modules. 
 
 ### Example
 
