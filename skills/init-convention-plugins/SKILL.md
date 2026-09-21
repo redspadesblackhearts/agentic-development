@@ -1,19 +1,19 @@
 ---
 name: init-convention-plugins
 description: Create Gradle convention plugins to keep build files small.
-example: /init-convention-plugins
+version: 2
 ---
 
 # Initialize Convention plugins
 
-When this phrase is used, the agent should create the following Gradle convention plugins:
-- AndroidApplicationConventionPlugin.kt
-- AndroidLibraryConventionPlugin.kt
-- AndroidUiConventionPlugin.kt
-- AndroidDataConventionPlugin.kt
-- AndroidTestConventionPlugin.kt
+When this phrase is used, the agent should create Gradle convention plugins.
+The goal is to keep the build files small and reusable.
+
 
 ## Examples
+- AndroidApplicationConventionPlugin.kt for Android Apps
+- AndroidUiConventionPlugin.kt for :feature:ui modules
+- AndroidDataConventionPlugin.kt for :feature:data modules
 See [examples](examples)
 
 ## Versioning
