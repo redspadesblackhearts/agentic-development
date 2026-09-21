@@ -1,1 +1,23 @@
-.idea
+# Secrets, credentials & local config
+**/google-services.json
+*.jks
+*.keystore
+keystore.properties
+.env
+.env.local
+local.properties
+
+# Build & tooling output
+.kotlin
+.gradle
+**/build
+node_modules/
+
+# IDE files (outside .idea/, see .idea/.gitignore for that directory's rules)
+*.iml
+
+# OS & profiler cruft
+.DS_Store
+Thumbs.db
+captures/
+*.hprof
